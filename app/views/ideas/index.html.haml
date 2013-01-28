@@ -1,0 +1,7 @@
+%h3 We have these ideas
+=link_to 'Add a new idea', new_idea_path
+%ul
+  -@ideas.each do |idea|
+    %li
+      = idea.text
+      =link_to 'edit', edit_idea_path(idea.id)
