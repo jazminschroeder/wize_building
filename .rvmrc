@@ -1,1 +1,1 @@
-rvm gemset use wize_building --create
+rvm use ruby-1.9.3-p374@wize_building --create

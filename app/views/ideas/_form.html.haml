@@ -1,4 +1,8 @@
+.alert.alert-error= error_messages_for(@idea)
 = form_for @idea do |f|
+  =f.label :title
+  =f.text_field :title
+
   =f.label :text
   =f.text_area :text, rows: 3
   =submit_tag 'Submit', class: 'btn btn-primary'
